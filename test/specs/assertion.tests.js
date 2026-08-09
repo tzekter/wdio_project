@@ -54,5 +54,4 @@ describe('Practice software testing - Module 2 Scenarios Automation',()=>{
 
         expect(isDisplayed).to.be.true;
     })
-    
 })
