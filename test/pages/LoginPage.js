@@ -1,4 +1,4 @@
-import { expect } from 'chai';
+import 'chai/register-should.js';
 import BasePage from '../core/BasePage.js';
 
 class LoginPage extends BasePage{
@@ -24,7 +24,7 @@ class LoginPage extends BasePage{
     async assertLoginPageLoaded(){
         await this.loginHeading.waitForDisplayed({timeout: 5000});
         const headingText = await this.loginHeading.getText();
-        expect(headingText).to.include('Login');
+        headingText.should.include('Login');
     }
 }
 export default new LoginPage();

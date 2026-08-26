@@ -1,4 +1,5 @@
 import BasePage from '../core/BasePage.js';
+import 'chai/register-should.js';
 
 class RegisterPage extends BasePage{
     get firstNameInput(){ return $('#first_name')}
